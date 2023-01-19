@@ -12,27 +12,102 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.homemain-outer {
+  margin-left: 280px;
+  margin-right: 2vw;
   display: flex;
   flex-direction: column;
+}
+.homemain-subhead {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 3.2rem;
+  color: #222b45;
+  display: flex;
   align-items: center;
+}
+.homemain-head {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 4.8rem;
+}
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+body {
+  background: #f2f2f2;
+  font-family: "Open Sans", sans-serif;
+}
+
+.search {
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+
+.searchTerm {
+  width: 75%;
+  border: 2px solid rgb(171, 170, 170);
+  border-right: none;
+  padding: 5px;
+  height: 20px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: #9dbfaf;
+}
+
+.searchTerm:focus {
+  color: #000;
+}
+
+.searchButton {
+  width: 40px;
+  border: 2px solid rgb(171, 170, 170);
+  text-align: center;
+  color: rgb(171, 170, 170);
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.wrap {
+  width: 30%;
+  position: absolute;
+}
+
+.homemain-graph {
+  width: 50%;
+}
+
+.graph-outer {
+  display: flex;
+  margin-top: 3rem;
+  flex-wrap: wrap;
+}
+
+.pagination {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.pagination span {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+.pagination span.active {
+  background-color: rgba(191, 30, 46, 255);
   color: white;
+  border-radius: 5px;
 }
 
-.App-link {
-  color: #61dafb;
+.pagination span:hover:not(.active) {
+  background-color: #ddd;
+  border-radius: 5px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.no-result {
+  margin-left: 100px;
 }
